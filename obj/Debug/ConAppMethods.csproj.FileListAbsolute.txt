@@ -1,0 +1,8 @@
+C:\Users\user\source\repos\console app\Day2\ConAppMethods\obj\Debug\ConAppMethods.csproj.AssemblyReference.cache
+C:\Users\user\source\repos\console app\Day2\ConAppMethods\obj\Debug\ConAppMethods.csproj.SuggestedBindingRedirects.cache
+C:\Users\user\source\repos\console app\Day2\ConAppMethods\obj\Debug\ConAppMethods.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\console app\Day2\ConAppMethods\bin\Debug\ConAppMethods.exe.config
+C:\Users\user\source\repos\console app\Day2\ConAppMethods\bin\Debug\ConAppMethods.exe
+C:\Users\user\source\repos\console app\Day2\ConAppMethods\bin\Debug\ConAppMethods.pdb
+C:\Users\user\source\repos\console app\Day2\ConAppMethods\obj\Debug\ConAppMethods.exe
+C:\Users\user\source\repos\console app\Day2\ConAppMethods\obj\Debug\ConAppMethods.pdb
