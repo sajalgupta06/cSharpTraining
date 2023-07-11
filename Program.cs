@@ -95,23 +95,72 @@ namespace ConAppMethods
     internal class Program
     {
 
-        public class Calc
+        public class Emp
         {
-            public void Add(params double[] numbers)
+
+
+            public int Salary( int workingHours = 0, int workingDays = 0, int projectHandles=0, int extras=0)
             {
-                foreach (var item in numbers)
-                {
-                    Console.WriteLine(item);
-                }
+               
+                return workingHours * workingDays * 100 + projectHandles * 3000 + extras * 2000;
+
+
             }
         }
 
         static void Main(string[] args)
         {
-            double salary = 40000;
-            double bonus;
-            Calc obj = new Calc();
-            obj.Add(1,2,3,4,5);
+          Emp emp = new Emp();
+
+
+            int wh;
+            int wd;
+            int ph;
+            int extras;
+            string type;
+            Console.WriteLine("Choose employee type");
+            type = Console.ReadLine();
+
+
+            
+
+            switch (type)
+            {
+                case "HR":
+                    {
+                        Console.WriteLine("Enter working Hours, working days");
+                        wh = int.Parse(Console.ReadLine());
+                        wd = int.Parse(Console.ReadLine());
+                        Console.WriteLine("Employee Salary is " + emp.Salary(wh,wd,1));
+                        break;
+
+                    }
+                case "ADMIN":
+                    {
+                        Console.WriteLine("Enter working Hours, working days,project handle");
+                        wh = int.Parse(Console.ReadLine());
+                        wd = int.Parse(Console.ReadLine());
+                        ph = int.Parse(Console.ReadLine());
+                        Console.WriteLine("Employee Salary is " + emp.Salary(wh, wd,ph));
+                        break;
+                    }
+
+                case "SOFTWARE_DEVELOPER":
+                    {
+                        Console.WriteLine("Enter working Hours, working days,project handle,extras");
+                        wh = int.Parse(Console.ReadLine());
+                        wd = int.Parse(Console.ReadLine());
+                        ph = int.Parse(Console.ReadLine());
+                        extras = int.Parse(Console.ReadLine());
+                        Console.WriteLine("Employee Salary is "+emp.Salary(wh, wd, ph,extras));
+                        break;
+                    }
+                default:
+                    {
+                        Console.WriteLine("Invalid Attempt");
+                        break;
+                    }
+            }
             Console.ReadKey();
 
         }
